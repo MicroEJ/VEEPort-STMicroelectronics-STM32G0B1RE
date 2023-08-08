@@ -1,0 +1,10 @@
+stm32g0b1_threadx-bsp/sdk/Drivers/CMSIS/DSP/Lib/ARM/arm_cortexM0b_math.lib
+stm32g0b1_threadx-bsp/sdk/Drivers/CMSIS/DSP/Lib/ARM/arm_cortexM0l_math.lib
+stm32g0b1_threadx-bsp/sdk/Drivers/CMSIS/DSP/Lib/GCC/libarm_cortexM0l_math.a
+stm32g0b1_threadx-bsp/sdk/Drivers/CMSIS/DSP/Lib/IAR/iar_cortexM0b_math.a
+stm32g0b1_threadx-bsp/sdk/Drivers/CMSIS/DSP/Lib/IAR/iar_cortexM0l_math.a
+stm32g0b1_threadx-configuration/build/module/license-checker.jar
+stm32g0b1_threadx-fp/lib/jars/framework-1.0.0.jar
+
+stm32g0b1_threadx-bsp/projects/microej/platform/lib/microejapp.o
+stm32g0b1_threadx-bsp/projects/microej/platform/lib/microejruntime.a

@@ -1,0 +1,8 @@
+[submodule "stm32g0b1_threadx-bsp/sdk/STM32CubeG0"]
+	path = stm32g0b1_threadx-bsp/sdk/STM32CubeG0
+	url = https://github.com/STMicroelectronics/STM32CubeG0.git
+	branch = master
+[submodule "stm32g0b1_threadx-bsp/projects/microej/M0113_CPPCheck"]
+	path = stm32g0b1_threadx-bsp/projects/microej/cppcheck/scripts
+	url = git@gitlab.cross:M0113_Platformers/M0113_CPPCheck.git
+	branch = master

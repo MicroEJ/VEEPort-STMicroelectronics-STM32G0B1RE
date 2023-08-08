@@ -1,0 +1,116 @@
+# 
+# TXT
+# 
+# Copyright 2023 MicroEJ Corp. All rights reserved.
+# Use of this source code is governed by a BSD-style license that can be found with this software.
+# 
+
+--- CPPCheck unverified lines --
+
+--- ../../core/src/fault_handlers.c
+85 void printer(uint32_t current_sp, uint32_t msp, uint32_t psp, uint32_t exc_return);
+87 __asm void print_stacked_registers()
+88 {
+89 TST     LR, #4
+90 ITE     EQ
+91 MRSEQ   R0, MSP
+92 MRSNE   R0, PSP
+93 MRS     R1, MSP
+94 MRS     R2, PSP
+95 MOV     R3, LR
+96 LDR     R4, =__cpp(printer)
+97 BX		  R4
+98 }
+104 "MOVS R7, #4 	\n"
+105 "MOV R6, LR 	\n"
+106 "TST R6, R7 	\n"
+107 "BNE branch_else \n"
+108 "MRS R0, MSP 	\n"
+109 "B branch_end 	\n"
+110 "branch_else:  	\n"
+111 "MRS R0, PSP  	\n"
+112 "branch_end:  	\n"
+113 "MRS R1, MSP  	\n"
+114 "MRS R2, PSP  	\n"
+115 "MOV R3, LR  	\n"
+116 "BL printer  	\n"
+232 void HardFault_Handler (void)
+233 {
+234 printf("%s \n",__func__);
+235 INFINITE_LOOP();
+236 }
+242 void MemFault_Handler (void)
+243 {
+244 printf("%s \n",__func__);
+245 INFINITE_LOOP();
+246 }
+252 void BusFault_Handler (void)
+253 {
+254 printf("%s \n",__func__);
+255 INFINITE_LOOP();
+256 }
+262 void UsageFault_Handler (void)
+263 {
+264 printf("%s \n",__func__);
+265 INFINITE_LOOP();
+266 }
+--- ../../core/inc/fault_handlers.h
+--- ../../main/src/gpio.c
+64 PC2 PC3 PC4 PC5
+65 PC6 PC7 PC8 PC9
+66 PC10 */
+82 PA7 PA8 PA9 PA10
+83 PA11 PA12 PA15 */
+99 PB11 PB12 PB13 PB14
+100 PB15 PB3 PB4 PB5
+101 PB6 PB7 PB8 PB9 */
+111 PD2 PD3 PD4 PD5
+112 PD6 */
+--- ../../main/inc/gpio.h
+29 extern "C" {
+50 }
+--- ../../main/inc/main.h
+30 extern "C" {
+101 }
+--- ../../core/src/LLBSP_generic.c
+21 extern "C" {
+64 }
+--- ../../core/src/LLMJVM_ThreadX.c
+--- ../../core/inc/misra_2004_conf.h
+47 MISRA_2004_ENABLE_ALL
+--- ../../core/inc/microej_time.h
+27 extern "C" {
+67 }
+--- ../../main/src/main.c
+302 ex: MICROEJ_MAIN_TRACE("Wrong parameters value: file %s on line %d\r\n", file, line) */
+--- ../../core/inc/microej_main.h
+22 extern "C" {
+33 }
+--- ../../core/src/microej_main.c
+24 extern "C" {
+65 }
+--- ../../core/src/microej_time.c
+--- ../../core/inc/microej.h
+--- ../../core/src/putchar.c
+--- ../../main/src/stm32g0xx_hal_msp.c
+--- ../../main/src/stm32g0xx_it.c
+--- ../../main/inc/stm32g0xx_it.h
+29 extern "C" {
+61 }
+--- ../../main/src/system_stm32g0xx.c
+117 configuration. */
+119 anywhere in Flash or Sram, else the vector table is kept at the automatic
+120 remap of boot address selected */
+125 in Sram else user remap will be done in Flash. */
+129 This value must be a multiple of 0x200. */
+131 This value must be a multiple of 0x200. */
+134 This value must be a multiple of 0x200. */
+136 This value must be a multiple of 0x200. */
+156 1) by calling CMSIS function SystemCoreClockUpdate()
+157 2) by calling HAL API function HAL_RCC_GetHCLKFreq()
+158 3) each time HAL_RCC_ClockConfig() is called to configure the system clock frequency
+159 Note: If you use this function to configure the system clock; then there
+160 is no need to call the 2 first functions listed above, since SystemCoreClock
+161 variable is updated automatically.
+193 SCB->VTOR = VECT_TAB_BASE_ADDRESS | VECT_TAB_OFFSET; /* Vector Table Relocation */
+263 SYSCLK = PLL_VCO / PLLR

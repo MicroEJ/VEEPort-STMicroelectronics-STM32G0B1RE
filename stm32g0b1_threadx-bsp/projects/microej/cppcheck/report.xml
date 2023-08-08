@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+ Copyright 2023 MicroEJ Corp. All rights reserved.
+ Use of this source code is governed by a BSD-style license that can be found with this software.
+-->
+<results version="2">
+    <cppcheck version="2.10"/>
+    <errors><error id="misra-c2012-8.4" severity="style" msg="(CONF0) A compatible declaration shall be visible when an object or function with external linkage is defined" verbose="A compatible declaration shall be visible when an object or function with external linkage is defined" file0=".cppcheck.CONF0/LLBSP_generic.a1.dump">
+            <location file="..\..\core\src\LLBSP_generic.c" line="38" column="9"/>
+        </error>
+    <error id="misra-c2012-8.4" severity="style" msg="(CONF0) A compatible declaration shall be visible when an object or function with external linkage is defined" verbose="A compatible declaration shall be visible when an object or function with external linkage is defined" file0=".cppcheck.CONF0/LLBSP_generic.a1.dump">
+            <location file="..\..\core\src\LLBSP_generic.c" line="58" column="6"/>
+        </error>
+    <error id="misra-c2012-10.5" severity="style" msg="(CONF0) The value of an expression should not be cast to an inappropriate essential type" verbose="The value of an expression should not be cast to an inappropriate essential type" file0=".cppcheck.CONF0/LLBSP_generic.a1.dump">
+            <location file="..\..\core\src\LLBSP_generic.c" line="46" column="9"/>
+        </error>
+    <error id="misra-c2012-11.6" severity="style" msg="(CONF0) A cast shall not be performed between pointer to void and an arithmetic type" verbose="A cast shall not be performed between pointer to void and an arithmetic type" file0=".cppcheck.CONF0/LLBSP_generic.a1.dump">
+            <location file="..\..\core\src\LLBSP_generic.c" line="39" column="18"/>
+        </error>
+    <error id="misra-c2012-17.7" severity="style" msg="(CONF0) The value returned by a function having non-void return type shall be used" verbose="The value returned by a function having non-void return type shall be used" file0=".cppcheck.CONF0/LLBSP_generic.a1.dump">
+            <location file="..\..\core\src\LLBSP_generic.c" line="59" column="9"/>
+        </error>
+    <error id="misra-c2012-7.2" severity="style" msg="(CONF0) A \342\200\234u\342\200\235 or \342\200\234U\342\200\235 suffix shall be applied to all integer constants that are represented in an unsigned type" verbose="A \342\200\234u\342\200\235 or \342\200\234U\342\200\235 suffix shall be applied to all integer constants that are represented in an unsigned type" file0=".cppcheck.CONF0/LLMJVM_ThreadX.a1.dump">
+            <location file="..\..\core\src\LLMJVM_ThreadX.c" line="55" column="50"/>
+        </error>
+    <error id="misra-c2012-8.4" severity="style" msg="(CONF0) A compatible declaration shall be visible when an object or function with external linkage is defined" verbose="A compatible declaration shall be visible when an object or function with external linkage is defined" file0=".cppcheck.CONF0/LLMJVM_ThreadX.a1.dump">
+            <location file="..\..\core\src\LLMJVM_ThreadX.c" line="49" column="9"/>
+        </error>
+    <error id="misra-c2012-8.4" severity="style" msg="(CONF0) A compatible declaration shall be visible when an object or function with external linkage is defined" verbose="A compatible declaration shall be visible when an object or function with external linkage is defined" file0=".cppcheck.CONF0/LLMJVM_ThreadX.a1.dump">
+            <location file="..\..\core\src\LLMJVM_ThreadX.c" line="78" column="9"/>
+        </error>
+    <error id="misra-c2012-8.4" severity="style" msg="(CONF0) A compatible declaration shall be visible when an object or function with external linkage is defined" verbose="A compatible declaration shall be visible when an object or function with external linkage is defined" file0=".cppcheck.CONF0/LLMJVM_ThreadX.a1.dump">
+            <location file="..\..\core\src\LLMJVM_ThreadX.c" line="91" column="9"/>
+        </error>
+    <error id="misra-c2012-8.4" severity="style" msg="(CONF0) A compatible declaration shall be visible when an object or function with external linkage is defined" verbose="A compatible declaration shall be visible when an object or function with external linkage is defined" file0=".cppcheck.CONF0/LLMJVM_ThreadX.a1.dump">
+            <location file="..\..\core\src\LLMJVM_ThreadX.c" line="128" column="9"/>
+        </error>
+    <error id="misra-c2012-8.4" severity="style" msg="(CONF0) A compatible declaration shall be visible when an object or function with external linkage is defined" verbose="A compatible declaration shall be visible when an object or function with external linkage is defined" file0=".cppcheck.CONF0/LLMJVM_ThreadX.a1.dump">
+            <location file="..\..\core\src\LLMJVM_ThreadX.c" line="150" column="9"/>
+        </error>
+    <error id="misra-c2012-8.4" severity="style" msg="(CONF0) A compatible declaration shall be visible when an object or function with external linkage is defined" verbose="A compatible declaration shall be visible when an object or function with external linkage is defined" file0=".cppcheck.CONF0/LLMJVM_ThreadX.a1.dump">
+            <location file="..\..\core\src\LLMJVM_ThreadX.c" line="173" column="9"/>
+        </error>
+    <error id="misra-c2012-8.4" severity="style" msg="(CONF0) A compatible declaration shall be visible when an object or function with external linkage is defined" verbose="A compatible declaration shall be visible when an object or function with external linkage is defined" file0=".cppcheck.CONF0/LLMJVM_ThreadX.a1.dump">
+            <location file="..\..\core\src\LLMJVM_ThreadX.c" line="181" column="9"/>
+        </error>
+    <error id="misra-c2012-8.4" severity="style" msg="(CONF0) A compatible declaration shall be visible when an object or function with external linkage is defined" verbose="A compatible declaration shall be visible when an object or function with external linkage is defined" file0=".cppcheck.CONF0/LLMJVM_ThreadX.a1.dump">
+            <location file="..\..\core\src\LLMJVM_ThreadX.c" line="190" column="9"/>
+        </error>
+    <error id="misra-c2012-8.4" severity="style" msg="(CONF0) A compatible declaration shall be visible when an object or function with external linkage is defined" verbose="A compatible declaration shall be visible when an object or function with external linkage is defined" file0=".cppcheck.CONF0/LLMJVM_ThreadX.a1.dump">
+            <location file="..\..\core\src\LLMJVM_ThreadX.c" line="200" column="6"/>
+        </error>
+    <error id="misra-c2012-8.4" severity="style" msg="(CONF0) A compatible declaration shall be visible when an object or function with external linkage is defined" verbose="A compatible declaration shall be visible when an object or function with external linkage is defined" file0=".cppcheck.CONF0/LLMJVM_ThreadX.a1.dump">
+            <location file="..\..\core\src\LLMJVM_ThreadX.c" line="212" column="9"/>
+        </error>
+    <error id="misra-c2012-8.4" severity="style" msg="(CONF0) A compatible declaration shall be visible when an object or function with external linkage is defined" verbose="A compatible declaration shall be visible when an object or function with external linkage is defined" file0=".cppcheck.CONF0/LLMJVM_ThreadX.a1.dump">
+            <location file="..\..\core\src\LLMJVM_ThreadX.c" line="222" column="9"/>
+        </error>
+    <error id="misra-c2012-21.1" severity="style" msg="(CONF0) #define and #undef shall not be used on a reserved identifier or reserved macro name" verbose="#define and #undef shall not be used on a reserved identifier or reserved macro name" file0=".cppcheck.CONF0/LLMJVM_ThreadX.a1.dump">
+            <location file="..\..\core\inc\misra_2004_conf.h" line="9" column="0"/>
+        </error>
+    <error id="misra-c2012-17.7" severity="style" msg="(CONF0) The value returned by a function having non-void return type shall be used" verbose="The value returned by a function having non-void return type shall be used" file0=".cppcheck.CONF0/microej_main.a1.dump">
+            <location file="..\..\core\src\microej_main.c" line="39" column="9"/>
+        </error>
+    <error id="misra-c2012-17.7" severity="style" msg="(CONF0) The value returned by a function having non-void return type shall be used" verbose="The value returned by a function having non-void return type shall be used" file0=".cppcheck.CONF0/microej_main.a1.dump">
+            <location file="..\..\core\src\microej_main.c" line="41" column="9"/>
+        </error>
+    <error id="misra-c2012-17.7" severity="style" msg="(CONF0) The value returned by a function having non-void return type shall be used" verbose="The value returned by a function having non-void return type shall be used" file0=".cppcheck.CONF0/microej_main.a1.dump">
+            <location file="..\..\core\src\microej_main.c" line="49" column="11"/>
+        </error>
+    <error id="misra-c2012-17.7" severity="style" msg="(CONF0) The value returned by a function having non-void return type shall be used" verbose="The value returned by a function having non-void return type shall be used" file0=".cppcheck.CONF0/microej_main.a1.dump">
+            <location file="..\..\core\src\microej_main.c" line="51" column="11"/>
+        </error>
+    <error id="misra-c2012-17.7" severity="style" msg="(CONF0) The value returned by a function having non-void return type shall be used" verbose="The value returned by a function having non-void return type shall be used" file0=".cppcheck.CONF0/microej_main.a1.dump">
+            <location file="..\..\core\src\microej_main.c" line="56" column="10"/>
+        </error>
+    <error id="misra-c2012-8.4" severity="style" msg="(CONF0) A compatible declaration shall be visible when an object or function with external linkage is defined" verbose="A compatible declaration shall be visible when an object or function with external linkage is defined" file0=".cppcheck.CONF0/stm32g0xx_hal_msp.a1.dump">
+            <location file="..\..\main\src\stm32g0xx_hal_msp.c" line="67" column="6"/>
+        </error>
+    <error id="misra-c2012-8.4" severity="style" msg="(CONF0) A compatible declaration shall be visible when an object or function with external linkage is defined" verbose="A compatible declaration shall be visible when an object or function with external linkage is defined" file0=".cppcheck.CONF0/system_stm32g0xx.a1.dump">
+            <location file="..\..\main\src\system_stm32g0xx.c" line="189" column="6"/>
+        </error>
+    <error id="misra-c2012-8.4" severity="style" msg="(CONF0) A compatible declaration shall be visible when an object or function with external linkage is defined" verbose="A compatible declaration shall be visible when an object or function with external linkage is defined" file0=".cppcheck.CONF0/system_stm32g0xx.a1.dump">
+            <location file="..\..\main\src\system_stm32g0xx.c" line="237" column="6"/>
+        </error>
+    <error id="misra-c2012-8.4" severity="style" msg="(CONF0) A compatible declaration shall be visible when an object or function with external linkage is defined" verbose="A compatible declaration shall be visible when an object or function with external linkage is defined" file0=".cppcheck.CONF0/system_stm32g0xx.a1.dump">
+            <location file="..\..\main\src\system_stm32g0xx.c" line="165" column="18"/>
+        </error>
+    <error id="misra-c2012-8.4" severity="style" msg="(CONF0) A compatible declaration shall be visible when an object or function with external linkage is defined" verbose="A compatible declaration shall be visible when an object or function with external linkage is defined" file0=".cppcheck.CONF0/system_stm32g0xx.a1.dump">
+            <location file="..\..\main\src\system_stm32g0xx.c" line="163" column="12"/>
+        </error>
+    <error id="misra-c2012-8.4" severity="style" msg="(CONF0) A compatible declaration shall be visible when an object or function with external linkage is defined" verbose="A compatible declaration shall be visible when an object or function with external linkage is defined" file0=".cppcheck.CONF0/system_stm32g0xx.a1.dump">
+            <location file="..\..\main\src\system_stm32g0xx.c" line="166" column="18"/>
+        </error>
+    <error id="misra-c2012-8.7" severity="style" msg="(CONF0,CONF1) Functions and objects should not be defined with external linkage if they are referenced in only one translation unit" verbose="Functions and objects should not be defined with external linkage if they are referenced in only one translation unit">
+            <location file="..\..\main\src\system_stm32g0xx.c" line="165" column="18"/>
+        </error>
+    <error id="misra-c2012-8.4" severity="style" msg="(CONF1) A compatible declaration shall be visible when an object or function with external linkage is defined" verbose="A compatible declaration shall be visible when an object or function with external linkage is defined" file0=".cppcheck.CONF1/LLBSP_generic.a1.dump">
+            <location file="..\..\core\src\LLBSP_generic.c" line="38" column="9"/>
+        </error>
+    <error id="misra-c2012-8.4" severity="style" msg="(CONF1) A compatible declaration shall be visible when an object or function with external linkage is defined" verbose="A compatible declaration shall be visible when an object or function with external linkage is defined" file0=".cppcheck.CONF1/LLBSP_generic.a1.dump">
+            <location file="..\..\core\src\LLBSP_generic.c" line="58" column="6"/>
+        </error>
+    <error id="misra-c2012-10.5" severity="style" msg="(CONF1) The value of an expression should not be cast to an inappropriate essential type" verbose="The value of an expression should not be cast to an inappropriate essential type" file0=".cppcheck.CONF1/LLBSP_generic.a1.dump">
+            <location file="..\..\core\src\LLBSP_generic.c" line="46" column="9"/>
+        </error>
+    <error id="misra-c2012-11.6" severity="style" msg="(CONF1) A cast shall not be performed between pointer to void and an arithmetic type" verbose="A cast shall not be performed between pointer to void and an arithmetic type" file0=".cppcheck.CONF1/LLBSP_generic.a1.dump">
+            <location file="..\..\core\src\LLBSP_generic.c" line="39" column="18"/>
+        </error>
+    <error id="misra-c2012-17.7" severity="style" msg="(CONF1) The value returned by a function having non-void return type shall be used" verbose="The value returned by a function having non-void return type shall be used" file0=".cppcheck.CONF1/LLBSP_generic.a1.dump">
+            <location file="..\..\core\src\LLBSP_generic.c" line="59" column="9"/>
+        </error>
+    <error id="misra-c2012-7.2" severity="style" msg="(CONF1) A \342\200\234u\342\200\235 or \342\200\234U\342\200\235 suffix shall be applied to all integer constants that are represented in an unsigned type" verbose="A \342\200\234u\342\200\235 or \342\200\234U\342\200\235 suffix shall be applied to all integer constants that are represented in an unsigned type" file0=".cppcheck.CONF1/LLMJVM_ThreadX.a1.dump">
+            <location file="..\..\core\src\LLMJVM_ThreadX.c" line="55" column="50"/>
+        </error>
+    <error id="misra-c2012-8.4" severity="style" msg="(CONF1) A compatible declaration shall be visible when an object or function with external linkage is defined" verbose="A compatible declaration shall be visible when an object or function with external linkage is defined" file0=".cppcheck.CONF1/LLMJVM_ThreadX.a1.dump">
+            <location file="..\..\core\src\LLMJVM_ThreadX.c" line="49" column="9"/>
+        </error>
+    <error id="misra-c2012-8.4" severity="style" msg="(CONF1) A compatible declaration shall be visible when an object or function with external linkage is defined" verbose="A compatible declaration shall be visible when an object or function with external linkage is defined" file0=".cppcheck.CONF1/LLMJVM_ThreadX.a1.dump">
+            <location file="..\..\core\src\LLMJVM_ThreadX.c" line="78" column="9"/>
+        </error>
+    <error id="misra-c2012-8.4" severity="style" msg="(CONF1) A compatible declaration shall be visible when an object or function with external linkage is defined" verbose="A compatible declaration shall be visible when an object or function with external linkage is defined" file0=".cppcheck.CONF1/LLMJVM_ThreadX.a1.dump">
+            <location file="..\..\core\src\LLMJVM_ThreadX.c" line="91" column="9"/>
+        </error>
+    <error id="misra-c2012-8.4" severity="style" msg="(CONF1) A compatible declaration shall be visible when an object or function with external linkage is defined" verbose="A compatible declaration shall be visible when an object or function with external linkage is defined" file0=".cppcheck.CONF1/LLMJVM_ThreadX.a1.dump">
+            <location file="..\..\core\src\LLMJVM_ThreadX.c" line="128" column="9"/>
+        </error>
+    <error id="misra-c2012-8.4" severity="style" msg="(CONF1) A compatible declaration shall be visible when an object or function with external linkage is defined" verbose="A compatible declaration shall be visible when an object or function with external linkage is defined" file0=".cppcheck.CONF1/LLMJVM_ThreadX.a1.dump">
+            <location file="..\..\core\src\LLMJVM_ThreadX.c" line="150" column="9"/>
+        </error>
+    <error id="misra-c2012-8.4" severity="style" msg="(CONF1) A compatible declaration shall be visible when an object or function with external linkage is defined" verbose="A compatible declaration shall be visible when an object or function with external linkage is defined" file0=".cppcheck.CONF1/LLMJVM_ThreadX.a1.dump">
+            <location file="..\..\core\src\LLMJVM_ThreadX.c" line="173" column="9"/>
+        </error>
+    <error id="misra-c2012-8.4" severity="style" msg="(CONF1) A compatible declaration shall be visible when an object or function with external linkage is defined" verbose="A compatible declaration shall be visible when an object or function with external linkage is defined" file0=".cppcheck.CONF1/LLMJVM_ThreadX.a1.dump">
+            <location file="..\..\core\src\LLMJVM_ThreadX.c" line="181" column="9"/>
+        </error>
+    <error id="misra-c2012-8.4" severity="style" msg="(CONF1) A compatible declaration shall be visible when an object or function with external linkage is defined" verbose="A compatible declaration shall be visible when an object or function with external linkage is defined" file0=".cppcheck.CONF1/LLMJVM_ThreadX.a1.dump">
+            <location file="..\..\core\src\LLMJVM_ThreadX.c" line="190" column="9"/>
+        </error>
+    <error id="misra-c2012-8.4" severity="style" msg="(CONF1) A compatible declaration shall be visible when an object or function with external linkage is defined" verbose="A compatible declaration shall be visible when an object or function with external linkage is defined" file0=".cppcheck.CONF1/LLMJVM_ThreadX.a1.dump">
+            <location file="..\..\core\src\LLMJVM_ThreadX.c" line="200" column="6"/>
+        </error>
+    <error id="misra-c2012-8.4" severity="style" msg="(CONF1) A compatible declaration shall be visible when an object or function with external linkage is defined" verbose="A compatible declaration shall be visible when an object or function with external linkage is defined" file0=".cppcheck.CONF1/LLMJVM_ThreadX.a1.dump">
+            <location file="..\..\core\src\LLMJVM_ThreadX.c" line="212" column="9"/>
+        </error>
+    <error id="misra-c2012-8.4" severity="style" msg="(CONF1) A compatible declaration shall be visible when an object or function with external linkage is defined" verbose="A compatible declaration shall be visible when an object or function with external linkage is defined" file0=".cppcheck.CONF1/LLMJVM_ThreadX.a1.dump">
+            <location file="..\..\core\src\LLMJVM_ThreadX.c" line="222" column="9"/>
+        </error>
+    <error id="misra-c2012-21.1" severity="style" msg="(CONF1) #define and #undef shall not be used on a reserved identifier or reserved macro name" verbose="#define and #undef shall not be used on a reserved identifier or reserved macro name" file0=".cppcheck.CONF1/LLMJVM_ThreadX.a1.dump">
+            <location file="..\..\core\inc\misra_2004_conf.h" line="9" column="0"/>
+        </error>
+    <error id="misra-c2012-17.7" severity="style" msg="(CONF1) The value returned by a function having non-void return type shall be used" verbose="The value returned by a function having non-void return type shall be used" file0=".cppcheck.CONF1/microej_main.a1.dump">
+            <location file="..\..\core\src\microej_main.c" line="39" column="9"/>
+        </error>
+    <error id="misra-c2012-17.7" severity="style" msg="(CONF1) The value returned by a function having non-void return type shall be used" verbose="The value returned by a function having non-void return type shall be used" file0=".cppcheck.CONF1/microej_main.a1.dump">
+            <location file="..\..\core\src\microej_main.c" line="41" column="9"/>
+        </error>
+    <error id="misra-c2012-17.7" severity="style" msg="(CONF1) The value returned by a function having non-void return type shall be used" verbose="The value returned by a function having non-void return type shall be used" file0=".cppcheck.CONF1/microej_main.a1.dump">
+            <location file="..\..\core\src\microej_main.c" line="49" column="11"/>
+        </error>
+    <error id="misra-c2012-17.7" severity="style" msg="(CONF1) The value returned by a function having non-void return type shall be used" verbose="The value returned by a function having non-void return type shall be used" file0=".cppcheck.CONF1/microej_main.a1.dump">
+            <location file="..\..\core\src\microej_main.c" line="51" column="11"/>
+        </error>
+    <error id="misra-c2012-17.7" severity="style" msg="(CONF1) The value returned by a function having non-void return type shall be used" verbose="The value returned by a function having non-void return type shall be used" file0=".cppcheck.CONF1/microej_main.a1.dump">
+            <location file="..\..\core\src\microej_main.c" line="56" column="10"/>
+        </error>
+    <error id="misra-c2012-8.4" severity="style" msg="(CONF1) A compatible declaration shall be visible when an object or function with external linkage is defined" verbose="A compatible declaration shall be visible when an object or function with external linkage is defined" file0=".cppcheck.CONF1/stm32g0xx_hal_msp.a1.dump">
+            <location file="..\..\main\src\stm32g0xx_hal_msp.c" line="67" column="6"/>
+        </error>
+    <error id="misra-c2012-8.4" severity="style" msg="(CONF1) A compatible declaration shall be visible when an object or function with external linkage is defined" verbose="A compatible declaration shall be visible when an object or function with external linkage is defined" file0=".cppcheck.CONF1/system_stm32g0xx.a1.dump">
+            <location file="..\..\main\src\system_stm32g0xx.c" line="189" column="6"/>
+        </error>
+    <error id="misra-c2012-8.4" severity="style" msg="(CONF1) A compatible declaration shall be visible when an object or function with external linkage is defined" verbose="A compatible declaration shall be visible when an object or function with external linkage is defined" file0=".cppcheck.CONF1/system_stm32g0xx.a1.dump">
+            <location file="..\..\main\src\system_stm32g0xx.c" line="237" column="6"/>
+        </error>
+    <error id="misra-c2012-8.4" severity="style" msg="(CONF1) A compatible declaration shall be visible when an object or function with external linkage is defined" verbose="A compatible declaration shall be visible when an object or function with external linkage is defined" file0=".cppcheck.CONF1/system_stm32g0xx.a1.dump">
+            <location file="..\..\main\src\system_stm32g0xx.c" line="165" column="18"/>
+        </error>
+    <error id="misra-c2012-8.4" severity="style" msg="(CONF1) A compatible declaration shall be visible when an object or function with external linkage is defined" verbose="A compatible declaration shall be visible when an object or function with external linkage is defined" file0=".cppcheck.CONF1/system_stm32g0xx.a1.dump">
+            <location file="..\..\main\src\system_stm32g0xx.c" line="163" column="12"/>
+        </error>
+    <error id="misra-c2012-8.4" severity="style" msg="(CONF1) A compatible declaration shall be visible when an object or function with external linkage is defined" verbose="A compatible declaration shall be visible when an object or function with external linkage is defined" file0=".cppcheck.CONF1/system_stm32g0xx.a1.dump">
+            <location file="..\..\main\src\system_stm32g0xx.c" line="166" column="18"/>
+        </error>
+    </errors>
+    
+</results>

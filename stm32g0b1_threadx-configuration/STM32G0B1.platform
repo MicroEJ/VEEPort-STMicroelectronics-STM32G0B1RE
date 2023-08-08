@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!--
+	Platform
+	
+	Copyright 2023 MicroEJ Corp. All rights reserved.
+	Use of this source code is governed by a BSD-style license that can be found with this software.
+-->
+<platform hardwarePartNumber="STM32G0B1" name="Platform" version="1.0.0" provider="MicroEJ" vendorUrl="" workbenchMinVersion="5.1.2">
+    <environment architecture="CM0P" baseline="14" hardwarePartNumber="CM0P" toolchain="CM0P_IAR83" name="flopi0PI33" techVersion="1.6" version="8.0.0" level="eval" provider="MicroEJ" licenseTag="IS2T_J8F5C"/>
+    <group name="frontPanel"/>
+</platform>

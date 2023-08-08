@@ -1,0 +1,14 @@
+/STM32G0B1-Platform-CM0P_IAR83-1.0.0/
+
+/stm32g0b1_threadx-configuration/target~
+/stm32g0b1_threadx-bsp/projects/microej/platform/inc/
+/stm32g0b1_threadx-bsp/projects/microej/platform/lib/
+
+/stm32g0b1_threadx-bsp/projects/microej/EWARM/application.dep
+/stm32g0b1_threadx-bsp/projects/microej/EWARM/application.ewt
+/stm32g0b1_threadx-bsp/projects/microej/EWARM/settings/application.wsdt
+/stm32g0b1_threadx-bsp/projects/microej/EWARM/settings/VEEPort-NUCLEO-G0B1ER.dnx
+
+/stm32g0b1_threadx-bsp/projects/microej/EWARM/Release/
+/stm32g0b1_threadx-bsp/projects/microej/EWARM/settings/
+/.metadata/
