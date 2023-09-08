@@ -36,7 +36,7 @@ development board.
 
 .. image:: ./images/stm32_nucleo_g0b1re_front.png
 
-Clone the repository with ``git clone --recursive https://gitlab.cross/P0302_STM32U5A9J-DK/P0302_STM32U5A9-VEEPort.git``.
+Clone the repository with ``git clone --recursive https://github.com/MicroEJ/VEEPort-STMicroelectronics-STM32G0B1RE.git``.
 
 Related Files
 =============
@@ -293,7 +293,7 @@ prefixed by the given name:
 
 - ``stm32g0b1_threadx-validation``: Contains the test suites to run in order to validate features of the MicroEJ |VEEPORT|.
 
-- ``STM32G0B1-Platform-CM0P_IAR83-x.y.z``:
+- ``STM32G0B1-VEEPort-CM0P_IAR83-x.y.z``:
   Contains the |RCP| |VEEPORT| project which is empty by default until
   the VEE Port is built.
 
@@ -325,7 +325,7 @@ At the end of the execution the |VEEPORT| is fully built for the
 
 
 The |VEEPORT| project should be refreshed with no error in the |RCP|
-``STM32G0B1-Platform-CM0P_IAR83-x.y.z``.
+``STM32G0B1-VEEPort-CM0P_IAR83-x.y.z``.
 
 Please refer to
 https://docs.microej.com/en/latest/ApplicationDeveloperGuide/standaloneApplication.html
@@ -362,7 +362,7 @@ https://docs.microej.com/en/latest/ApplicationDeveloperGuide/serialToSocketTrans
 
 In ``config.properties``, the property ``target.platform.dir`` must be
 set to the absolute path to the |VEEPORT|.  For example
-``C:/<VEE Port root directory path>/STM32G0B1-Platform-CM0P_IAR83-x.y.z/source``.
+``C:/<VEE Port root directory path>/STM32G0B1-VEEPort-CM0P_IAR83-x.y.z/source``.
 
 If you have long paths issues, it is possible to configure the target folder path in the ``module.ivy`` of each testsuite runner project.
 Uncomment the build property line ``<!--ea:property name="target" value="<short_path>"/-->`` with a short path in the field ``value``.

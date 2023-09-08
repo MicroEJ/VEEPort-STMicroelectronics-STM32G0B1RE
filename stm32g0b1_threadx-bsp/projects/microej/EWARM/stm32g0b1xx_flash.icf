@@ -31,5 +31,7 @@ place in ROM_region   { readonly };
 place in RAM_region   { block RWDATA,
                         block CSTACK, block HEAP };
 
+place in RAM_region    { last section FREE_MEM};
+
 export symbol __ICFEDIT_region_RAM_start__;
 export symbol __ICFEDIT_region_RAM_end__;

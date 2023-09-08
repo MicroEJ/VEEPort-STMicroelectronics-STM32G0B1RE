@@ -161,7 +161,6 @@ void print_stacked_registers(void){
     printf("\n");
 
     printf("EXC_RETURN (LR) = %.8lX\n", exc_return);
-
     printf("---------------------------------------------------------------------\n");
 }
 
@@ -175,9 +174,10 @@ void HardFault_Handler(void)
     print_stacked_registers();
     printf("%s \n",__func__);
 
+#ifndef MICROEJ_CORE_VALIDATION
     printf("Perform LLMJVM_dump \n");
     LLMJVM_dump();
-
+#endif
     INFINITE_LOOP();
 }
 
@@ -190,8 +190,10 @@ void MemFault_Handler (void)
     print_stacked_registers();
     printf("%s \n",__func__);
 
+#ifndef MICROEJ_CORE_VALIDATION
     printf("Perform LLMJVM_dump \n");
     LLMJVM_dump();
+#endif
 
     INFINITE_LOOP();
 }
@@ -205,9 +207,10 @@ void BusFault_Handler (void)
     print_stacked_registers();
     printf("%s \n",__func__);
 
+#ifndef MICROEJ_CORE_VALIDATION
     printf("Perform LLMJVM_dump \n");
     LLMJVM_dump();
-
+#endif
     INFINITE_LOOP();
 }
 
@@ -220,9 +223,10 @@ void UsageFault_Handler (void)
     print_stacked_registers();
     printf("%s \n",__func__);
 
+#ifndef MICROEJ_CORE_VALIDATION
     printf("Perform LLMJVM_dump \n");
     LLMJVM_dump();
-
+#endif
     INFINITE_LOOP();
 }
 #else

@@ -3,7 +3,7 @@
     Use of this source code is governed by a BSD-style license that can be found with this software..
 
 .. |BOARD_NAME| replace:: STM32G0B1RE
-.. |VEEPORT_VER| replace:: 1.0.0
+.. |VEEPORT_VER| replace:: 1.0.1
 .. |VEEPORT| replace:: VEE Port
 .. |MANUFACTURER| replace:: STMicroelectronics
 .. |MICROEJ_ARCHITECTURE_VERSION| replace:: 8.0.0
@@ -70,6 +70,51 @@ Features
 
 - N/A
 
+
+MISRA Compliance
+================
+
+This VEE Port has a list of components that are MISRA-compliant (MISRA C:2012) with some noted exception.
+Below is the list of ``folders that have been verified``:
+
+- microej/core/
+- microej/main/
+
+Among the folders verified, below is the list of ``files that have not been verified``:
+
+- microej/core/src/LLMJVM_ThreadX.c
+- microej/core/src/microej_main.c
+- microej/core/src/LLBSP_generic.c
+- microej/core/inc/misra_2004_conf.h
+- microej/main/src/system_stm32g0xx.c
+- microej/main/src/stm32g0xx_hal_msp.c
+
+It has been verified with Cppcheck v2.10. Here is the list of deviations from MISRA standard:
+
++------------+-----------+----------------------------------------------------------------------+
+| Deviation  | Category  | Justification                                                        |
++============+===========+======================================================================+
+| Rule 2.5   | Advisory  | A macro can be defined at API level and not used by the application  |
+|            |           |                                                                      |
+| Rule 8.4   | Required  | Missing compatible declarations, cannot be seen during analysis.     |
+|            |           |                                                                      |
+| Rule 8.7   | Advisory  | External linkage, cannot be seen during analysis.                    |
+|            |           |                                                                      |
+| Rule 8.9   | Advisory  | TGlobal variable necessary to do only one init.                      |
+|            |           |                                                                      |
+| Rule 10.1  | Required  | This use case enter in the rule exception of MISRA (false positive)  |
+|            |           |                                                                      |
+| Rule 11.4  | Advisory  | Used when coding BSP C source code (drivers, etc.)                   |
+|            |           |                                                                      |
+| Rule 17.7  | Required  | The use of returned values of debug traces is not necessary.         |
+|            |           |                                                                      |
+| Rule 17.8  | Advisory  | Can be useful when designing C library                               |
+|            |           |                                                                      |
+| Rule 21.2  | Required  | fputc reserved identifier is overridden on purpose.                  |
+|            |           |                                                                      |
+| Rule 21.6  | Required  | Used for printf usage                                                |
++------------+-----------+----------------------------------------------------------------------+
+
 Known Issues/Limitations
 ========================
 
@@ -104,27 +149,27 @@ Memory Layout
      - Section Destination
      - Memory Type
    * - MicroEJ Application static
-     - ``.bss.soar``
+     - ``.bss.microej.statics``
      - ``.bss``
      - Internal SRAM
    * - MicroEJ Application threads stack blocks 
-     - ``.bss.vm.stacks.java``
+     - ``.bss.microej.stacks``
      - ``.ext_ram.bss``
      - Internal SRAM
    * - MicroEJ Core Engine internal heap 
-     - ``ICETEA_HEAP``
+     - ``.bss.microej.runtime``
      - ``.ext_ram.bss``
      - Internal SRAM
    * - MicroEJ Application heap 
-     - ``_java_heap``
+     - ``.bss.microej.heap``
      - ``.ext_ram.bss``
      - Internal SRAM
    * - MicroEJ Application Immortal Heap 
-     - ``_java_immortals``
+     - ``.bss.microej.immortals``
      - ``.ext_ram.bss``
      - Internal SRAM
    * - MicroEJ Application resources 
-     - ``.rodata.resources``
+     - ``.rodata.microej.resource.*``
      - ``.rodata``
      - Internal Flash
    * - MicroEJ System Applications code and resources 
@@ -140,7 +185,7 @@ Memory Layout
      - ``.rodata``
      - N/A
    * - MicroEJ Application and Library code 
-     - ``.text.soar``
+     - ``.rodata.microej.soar``
      - ``.rodata``
      - Internal Flash
 

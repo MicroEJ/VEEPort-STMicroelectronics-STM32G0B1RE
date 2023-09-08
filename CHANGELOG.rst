@@ -7,6 +7,18 @@
 ===========
 
 ----------------------
+ [1.0.1] - 2023-09-05
+----------------------
+
+Fixed
+=====
+
+- Update documentation.
+- Upgrade to the latest VEEPort template.
+- Fix unalign FREE_MEMORY symbol problem.
+- Fix occuring hardfault on CoreMark execution.
+
+----------------------
  [1.0.0] - 2023-08-08
 ----------------------
 

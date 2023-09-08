@@ -1,8 +1,7 @@
-/STM32G0B1-Platform-CM0P_IAR83-1.0.0/
+/STM32G0B1-VEEPort-CM0P_IAR83-1.0.1/build
+/STM32G0B1-VEEPort-CM0P_IAR83-1.0.1/source
 
 /stm32g0b1_threadx-configuration/target~
-/stm32g0b1_threadx-bsp/projects/microej/platform/inc/
-/stm32g0b1_threadx-bsp/projects/microej/platform/lib/
 
 /stm32g0b1_threadx-bsp/projects/microej/EWARM/application.dep
 /stm32g0b1_threadx-bsp/projects/microej/EWARM/application.ewt

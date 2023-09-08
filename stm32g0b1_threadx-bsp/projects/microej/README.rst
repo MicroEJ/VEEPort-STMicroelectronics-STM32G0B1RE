@@ -54,12 +54,12 @@ Customize BSP
 -------------
 
 
-Microjvm task
-~~~~~~~~~~~~~
+MicroEJ Core Engine Task 
+~~~~~~~~~~~~~~~~~~~~~~~~
 
 There are several macros available to customize the C task of the microjvm in the file ``stm32g0b1_threadx-bsp\projects\microej\main\src\main.c``:
 
-- ``MICROJVM_STACK_SIZE``: indicates the amount of memory allocated for the microjvm stack.
+- ``MICROEJ_CORE_ENGINE_TASK_STACK_SIZE``: indicates the amount of memory allocated for the microjvm stack.
 - ``JAVA_TASK_PRIORITY``: indicates priority of the microjvm C task.
 
 
@@ -76,7 +76,7 @@ Please use ``MICROEJ_MAIN_TRACE`` to print traces from the file ``stm32g0b1_thre
 Launch Coremark
 ~~~~~~~~~~~~~~~
 
-In the file ``stm32g0b1_threadx-bsp\projects\microej\main\inc\main.h``, uncomment the macro ``VALIDATION_BUILD`` in order to launch coremark benchmark.
+In the file ``stm32g0b1_threadx-bsp\projects\microej\main\inc\main.h``, uncomment the macro ``MICROEJ_CORE_VALIDATION`` in order to launch coremark benchmark.
 Note that the java application cannot start when this macro is enabled.
 
 Flash the Board

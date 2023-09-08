@@ -31,7 +31,7 @@
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #include "cmsis_os2.h"
-#ifdef VALIDATION_BUILD
+#ifdef MICROEJ_CORE_VALIDATION
     #include "t_core_main.h"
 #else
     #include "sni.h"
@@ -45,18 +45,18 @@
 
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
-#define MICROJVM_STACK_SIZE                (4 * 1024)
+#define MICROEJ_CORE_ENGINE_TASK_STACK_SIZE                (4 * 1024)
 
-#ifdef VALIDATION_BUILD
+#ifdef MICROEJ_CORE_VALIDATION
     /* Validation task constants */
     #define VALIDATION_TASK_PRIORITY           ( 8 ) 
-    #define VALIDATION_TASK_STACK_SIZE         (MICROJVM_STACK_SIZE / 4)
+    #define VALIDATION_TASK_STACK_SIZE         (MICROEJ_CORE_ENGINE_TASK_STACK_SIZE / 4)
     #define VALIDATION_TASK_NAME               "BoardValidation"
 
 #else
     /* MicroJvm task constants */
     #define JAVA_TASK_PRIORITY                 ( 8 ) 
-    #define JAVA_TASK_STACK_SIZE               (MICROJVM_STACK_SIZE / 4)
+    #define JAVA_TASK_STACK_SIZE               (MICROEJ_CORE_ENGINE_TASK_STACK_SIZE / 4)
     #define JAVA_TASK_NAME                     "MicroJvm"
 #endif
 /* USER CODE END PD */
@@ -69,7 +69,7 @@
 /* Private variables ---------------------------------------------------------*/
 
 /* USER CODE BEGIN PV */
-#ifdef VALIDATION_BUILD
+#ifdef MICROEJ_CORE_VALIDATION
   static const char *tx_validation_task_name = VALIDATION_TASK_NAME; // cppcheck-suppress [misra-c2012-8.9]: declared as global to ease task customization.
   uint8_t tx_stack_pool_validation[ VALIDATION_TASK_STACK_SIZE ];
 #else
@@ -86,13 +86,14 @@ void SystemClock_Config(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-#ifdef VALIDATION_BUILD
+#ifdef MICROEJ_CORE_VALIDATION
 
 static void txValidationTaskFunction(void * pvParameters)
 { 
 	(void)(pvParameters);
 
 	T_CORE_main();
+  osThreadExit();
 }
 
 #else
@@ -150,7 +151,7 @@ int main(void)
   MICROEJ_MAIN_TRACE( "Sys: %i / HCLK: %i / PCLK1: %i \r\n", HAL_RCC_GetSysClockFreq (),HAL_RCC_GetHCLKFreq(), HAL_RCC_GetPCLK1Freq());
 
   // Create tasks
-  #ifdef VALIDATION_BUILD
+  #ifdef MICROEJ_CORE_VALIDATION
   const osThreadAttr_t validation_task_attr = {
     .name       = tx_validation_task_name,
     .stack_mem  = tx_stack_pool_validation,

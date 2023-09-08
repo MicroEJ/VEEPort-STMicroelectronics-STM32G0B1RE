@@ -84,10 +84,10 @@
             <location file="..\..\main\src\system_stm32g0xx.c" line="237" column="6"/>
         </error>
     <error id="misra-c2012-8.4" severity="style" msg="(CONF0) A compatible declaration shall be visible when an object or function with external linkage is defined" verbose="A compatible declaration shall be visible when an object or function with external linkage is defined" file0=".cppcheck.CONF0/system_stm32g0xx.a1.dump">
-            <location file="..\..\main\src\system_stm32g0xx.c" line="165" column="18"/>
+            <location file="..\..\main\src\system_stm32g0xx.c" line="163" column="12"/>
         </error>
     <error id="misra-c2012-8.4" severity="style" msg="(CONF0) A compatible declaration shall be visible when an object or function with external linkage is defined" verbose="A compatible declaration shall be visible when an object or function with external linkage is defined" file0=".cppcheck.CONF0/system_stm32g0xx.a1.dump">
-            <location file="..\..\main\src\system_stm32g0xx.c" line="163" column="12"/>
+            <location file="..\..\main\src\system_stm32g0xx.c" line="165" column="18"/>
         </error>
     <error id="misra-c2012-8.4" severity="style" msg="(CONF0) A compatible declaration shall be visible when an object or function with external linkage is defined" verbose="A compatible declaration shall be visible when an object or function with external linkage is defined" file0=".cppcheck.CONF0/system_stm32g0xx.a1.dump">
             <location file="..\..\main\src\system_stm32g0xx.c" line="166" column="18"/>
@@ -174,10 +174,10 @@
             <location file="..\..\main\src\system_stm32g0xx.c" line="237" column="6"/>
         </error>
     <error id="misra-c2012-8.4" severity="style" msg="(CONF1) A compatible declaration shall be visible when an object or function with external linkage is defined" verbose="A compatible declaration shall be visible when an object or function with external linkage is defined" file0=".cppcheck.CONF1/system_stm32g0xx.a1.dump">
-            <location file="..\..\main\src\system_stm32g0xx.c" line="165" column="18"/>
+            <location file="..\..\main\src\system_stm32g0xx.c" line="163" column="12"/>
         </error>
     <error id="misra-c2012-8.4" severity="style" msg="(CONF1) A compatible declaration shall be visible when an object or function with external linkage is defined" verbose="A compatible declaration shall be visible when an object or function with external linkage is defined" file0=".cppcheck.CONF1/system_stm32g0xx.a1.dump">
-            <location file="..\..\main\src\system_stm32g0xx.c" line="163" column="12"/>
+            <location file="..\..\main\src\system_stm32g0xx.c" line="165" column="18"/>
         </error>
     <error id="misra-c2012-8.4" severity="style" msg="(CONF1) A compatible declaration shall be visible when an object or function with external linkage is defined" verbose="A compatible declaration shall be visible when an object or function with external linkage is defined" file0=".cppcheck.CONF1/system_stm32g0xx.a1.dump">
             <location file="..\..\main\src\system_stm32g0xx.c" line="166" column="18"/>

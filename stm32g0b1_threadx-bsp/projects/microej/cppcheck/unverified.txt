@@ -34,26 +34,26 @@
 114 "MRS R2, PSP  	\n"
 115 "MOV R3, LR  	\n"
 116 "BL printer  	\n"
-232 void HardFault_Handler (void)
-233 {
-234 printf("%s \n",__func__);
-235 INFINITE_LOOP();
-236 }
-242 void MemFault_Handler (void)
-243 {
-244 printf("%s \n",__func__);
-245 INFINITE_LOOP();
-246 }
-252 void BusFault_Handler (void)
-253 {
-254 printf("%s \n",__func__);
-255 INFINITE_LOOP();
-256 }
-262 void UsageFault_Handler (void)
-263 {
-264 printf("%s \n",__func__);
-265 INFINITE_LOOP();
-266 }
+236 void HardFault_Handler (void)
+237 {
+238 printf("%s \n",__func__);
+239 INFINITE_LOOP();
+240 }
+246 void MemFault_Handler (void)
+247 {
+248 printf("%s \n",__func__);
+249 INFINITE_LOOP();
+250 }
+256 void BusFault_Handler (void)
+257 {
+258 printf("%s \n",__func__);
+259 INFINITE_LOOP();
+260 }
+266 void UsageFault_Handler (void)
+267 {
+268 printf("%s \n",__func__);
+269 INFINITE_LOOP();
+270 }
 --- ../../core/inc/fault_handlers.h
 --- ../../main/src/gpio.c
 64 PC2 PC3 PC4 PC5
@@ -82,7 +82,7 @@
 27 extern "C" {
 67 }
 --- ../../main/src/main.c
-302 ex: MICROEJ_MAIN_TRACE("Wrong parameters value: file %s on line %d\r\n", file, line) */
+301 ex: MICROEJ_MAIN_TRACE("Wrong parameters value: file %s on line %d\r\n", file, line) */
 --- ../../core/inc/microej_main.h
 22 extern "C" {
 33 }

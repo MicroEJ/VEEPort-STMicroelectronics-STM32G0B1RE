@@ -368,7 +368,8 @@
                     <state>$PROJ_DIR$\..\validation\tests\core\c\inc</state>
                     <state>$PROJ_DIR$\..\validation\port\inc</state>
                     <state>$PROJ_DIR$\..\validation\framework\c\utils\inc</state>
-                    <state>$PROJ_DIR$\..\..\coremark</state>
+                    <state>$PROJ_DIR$\..\validation\framework\c\coremark</state>
+                    <state>$PROJ_DIR$\..\platform\inc\intern</state>
                 </option>
                 <option>
                     <name>CCStdIncCheck</name>
@@ -1881,19 +1882,22 @@
         <group>
             <name>coremark</name>
             <file>
-                <name>$PROJ_DIR$\..\..\coremark\core_list_join.c</name>
+                <name>$PROJ_DIR$\..\validation\framework\c\coremark\core_list_join.c</name>
             </file>
             <file>
-                <name>$PROJ_DIR$\..\..\coremark\core_main.c</name>
+                <name>$PROJ_DIR$\..\validation\framework\c\coremark\core_main.c</name>
             </file>
             <file>
-                <name>$PROJ_DIR$\..\..\coremark\core_matrix.c</name>
+                <name>$PROJ_DIR$\..\validation\framework\c\coremark\core_matrix.c</name>
             </file>
             <file>
-                <name>$PROJ_DIR$\..\..\coremark\core_state.c</name>
+                <name>$PROJ_DIR$\..\validation\framework\c\coremark\core_state.c</name>
             </file>
             <file>
-                <name>$PROJ_DIR$\..\..\coremark\core_util.c</name>
+                <name>$PROJ_DIR$\..\validation\framework\c\coremark\core_util.c</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\..\validation\framework\c\coremark\coremark.h</name>
             </file>
         </group>
         <group>

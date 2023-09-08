@@ -89,7 +89,7 @@ void Error_Handler(void);
 /**
  * @brief Sets this define to run the RAM and Coremark benchmarks, disabled by default.
  */
-// #define VALIDATION_BUILD
+//#define MICROEJ_CORE_VALIDATION
 
 
 
